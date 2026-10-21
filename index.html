@@ -1,13 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La Rueda Libre</title>
+    <style>
+        .reservas-layout {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .reservas-info table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .reservas-info th,
+        .reservas-info td {
+            padding: 10px;
+            border: 1px solid #888;
+            text-align: left;
+        }
+
+        .reservas-mapa iframe {
+            display: block;
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+
+        @media (max-width: 700px) {
+            .reservas-layout {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>hola</h1> 
-    <br> 
+    <header>
+        <h1 style="left: auto; font-weight:bold;">LA RUEDA LIBRE</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="mailto:contacto@tudominio.com" target="_blank">CONTACTANOS</a></li>
+                <li><a href="../Public/terifas.html">TARIFAS</a></li>
+                <li><a href="../Public/reservas.html">RESERVAS</a></li>
+            </ul>
+        </nav>
+    </header>
     <br>
+    <hr>
+
+    <main>
+
+        <section>
+
+            <h2>Reservas</h2>
+            <div class="reservas-layout">
+                <div class="reservas-info">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lunes</th>
+                                <th>8:00 am - 7:00 pm</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Marte</td>
+                                <td>8:00 am - 7:00 pm</td>
+                            </tr>
+                            <tr>
+                                <td>Miercoles</td>
+                                <td>8:00 am - 7:00 pm</td>
+                            </tr>
+                            <tr>
+                                <td>Jueves</td>
+                                <td>8:00 am - 7:00 pm</td>
+                            </tr>
+                            <tr>
+                                <td>Viernes</td>
+                                <td>8:00 am - 7:00 pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sabado</td>
+                                <td>8:00 am - 12:00 pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <form action="">
+                        <label for="">Correo electronico</label>
+                        <input type="email">
+                        <br>
+                        <label for="">Descripcion</label>
+                        <textarea name="" id=""></textarea>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+                <div class="reservas-mapa">
+                    <iframe
+                        src="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place/Cl.%2B76D%2BSur%2B%252347b-40,%2BSabaneta,%2BAntioquia/data%3D!4m2!3m1!1s0x8e4681618c405369:0x35c726d15233dde1%3Fsa%3DX%26ved%3D1t:242%26ictx%3D111&ved=2ahUKEwjCmr-h1cuXAxV8RjABHWzRAt4Q8gF6BAgUEAI&usg=AOvVaw2z_HdyJRzQx4_m4SwZWEve"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>&copy; 2026 La Rueda Libre</p>
+        </footer>
+    </main>
+
 </body>
+
 </html>
